@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://google.com"  method="get" target="_blank">
+        <p>Enter your name:</p>
+        <input type="text" name="Username" value="john@Lennon">
+        <!-- value is now the initial value of the input text type -->
+     
+       <input type="submit" value="Register">
+       <!-- value is the name of the button now -->
+
+       <p>Password</p>
+       <!-- paragraph is a block element, while input is inline, if you want incline, use label with input -->
+       <input type="password" name="UserPassword">
+       <input type="submit">
+       <P>SEARCH</P>
+       <input type="search">
+
+       <label>
+            Inline Name <input type="text" name="name">
+       </label>
+
+       <br>
+       <!-- write some text -->
+       <label>Write a poem! </label>
+       <br>
+       <textarea name="plot" rows="10" cols="50">Hello</textarea>
+    </form>
+
+    <!-- 
+    The action Attribute
+    The action attribute is used to specify the URL where the form data is sent upon submission.
+    -->
+
+    <!-- 
+        The method Attribute
+        The method attribute specifies how data is sent to the URL (defined in the action attribute). The allowed method values are:
+
+        get
+        post
+        dialog (which is not very common) -->
+    
+        
+</body>
+</html>
