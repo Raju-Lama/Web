@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Notes
+        <div> is a block-level element. Meaning it takes the full width 
+            available.
+        We use <div> to group multiple HTML elements.
+        The reason we group elements is to make it easier to add styles
+         and create layouts.
+    -->
+        <div>
+            <h1>Division</h1>
+        </div>
+
+
+        <div>
+            <ul>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+            </ul>
+        </div>
+
+
+        <div>
+            <p>Hello World</p>
+            <p>This is another paragraph</p>
+            <label>
+                <a href="https://www.google.com">Google</a>
+            </label>
+            <p>Another paragraph</p>
+        </div>
+
+    <style>
+        div:first-of-type 
+        {
+            background: #DDD;
+        }
+
+        div:last-of-type
+        {
+            background: #AAAAFF
+        }
+
+    </style>
+</body>
+</html>
