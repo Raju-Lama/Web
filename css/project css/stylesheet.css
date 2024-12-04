@@ -1,0 +1,10 @@
+div{
+    /* rather than body, use div to set background images */
+    background-image: url(img/owl.png);
+    /* when the size of image is small than the size of the body or div, the image repeats */
+    /* background-repeat: no-repeat; */
+    /* it is not necessary to put background repeat when we have background-size: cover */
+    
+    background-size: cover;
+    /* size is compatible to screen now */
+}
