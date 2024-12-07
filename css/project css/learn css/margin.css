@@ -1,0 +1,25 @@
+/* it adds space outside the border */
+
+/* Inline behavior: Elements stay on the same line.
+Block behavior: You can control the element's width and height, and yes—add vertical margins. */
+
+a {
+    padding-top: 10px;
+   display: block;
+   /* block display not inline */
+   width: 120px;
+   height: 30px;
+   text-align: center;
+   background-color: #2596be;
+   color: #ffffff;
+    /* text color */
+    
+   text-decoration: none;
+   /* underline from the anchor tag */
+
+  /* Center element horizontally */
+   margin: auto;
+
+   /* Note: You can achieve the same effect by 
+   individually setting margin-left and margin-right to auto. */
+}

@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* selects all the elements */
+/* using these properties can ensure webpage in any browser to avoid the
+default margins and paddings */

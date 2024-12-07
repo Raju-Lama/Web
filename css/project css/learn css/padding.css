@@ -1,0 +1,23 @@
+/* padding is the space between the border and the element /content */
+
+div{
+    padding: 10px;
+    /* padding to all the sides */
+    background: #8e44ad;
+
+    padding: 10px 30px;
+    /* padding to the vertical and horizontal sides. */
+    /* 10px vertically, 30px horizontally */
+
+    padding: 10px 30px 20px;
+     /* Applies 10px padding on top, 
+    30px on the sides and 
+    20px on the bottom  */
+
+    padding: 10px 30px 40px 50px;
+    /* Applies 10px on top, 
+    30px on right, 
+    40px on bottom, and 
+    50px on left */
+}
+

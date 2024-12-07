@@ -1,0 +1,27 @@
+div{
+    width: 300px;
+    height: 300px;
+    background-color: #add8e6;
+    border: 50px solid black;
+    padding: 50px;
+ 
+    /* Specify border-box */
+    box-sizing: border-box;
+
+    /* Setting box-sizing: border-box; ensures that padding and borders are included in the element's width and height, 
+    keeping the size exactly as you defined. */
+
+    /* Note: The default value for box-sizing is content-box.
+     Padding and borders are excluded when using this value. */
+}
+
+div{
+    margin: 20px;
+    border: 5px solid #34495e;
+    padding: 50px;
+    width: 150px;
+    height: 150px;
+    background: #9b59b6;
+    border-radius: 50%;
+
+}

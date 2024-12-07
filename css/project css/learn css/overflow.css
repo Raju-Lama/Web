@@ -1,0 +1,23 @@
+div {
+    height: 140px;
+    /* height is fixed
+    should we add more contents and if the height is lesser, 
+    the overflow property can be handy */
+
+    background-color: #0cd1ba;
+    border: 2px solid #000000;
+ 
+    /* Hide overflowing content */
+    overflow: hidden;
+
+    /* 
+    
+Note: You can also control overflow behavior horizontally or vertically
+ using overflow-x and overflow-y. */
+
+ /* overflow: auto hides the overflowing content, 
+ but it can be accessed by scrolling the container. */
+ /* 
+ Note: The auto value generates scrollbars only when the content overflows. If you want the scrollbars 
+ regardless of the overflow, use the scroll value. */
+}

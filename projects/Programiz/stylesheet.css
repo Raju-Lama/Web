@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* this will reset the default browser styles
+This wil ensure that all the elements look the same across
+different browsers */
+
+.courses-container {
+    background-color: #fff5e7;
+    padding: 32px; 
+    font-family: "Euclid Circular A", sans-serif;
+}
+/* 
+Now that you've set up the structure, let's add some styles
+ to the container to make it more visually appealing:
+
+Add padding to the container so there's some space around the content.
+Choose a background color (#fff5e7) to make the container stand out.
+Pick a font for the text to keep the design consistent and easy to read.
+*/
+
+.course-card {
+    background-color: #fff;  
+    padding: 32px 16px;    
+    margin: 16px;    
+    border-radius: 8px;    
+    display: inline-block;    
+    text-align: center;   
+    border: 1px solid #ddd;    
+    width: 240px;
+}
+
+/* for h2 class */
+.courses-title {
+    color: #25265e;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.course-title {
+    font-size: 18px;
+    color: #25265e;
+    margin-bottom: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.course-image {
+    width: 160px;
+    height: auto;
+    margin-bottom: 16px;
+}
