@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- important topic -->
+<body onload="alert('page loaded!')">
+
+    <form onsubmit="alert('Form Submitted!'); return false;">
+        <input type="text" onchange="alert('Input changed!')" onfocus="this.style.background='yellow'" onblur="this.style.background='white'">
+        <input type="submit">
+    </form>
+
+    <button onclick="alert('Mouse clicked!')">click</button>
+
+    <input type="text" onkeydown="console.log('Key down!')" onkeyup="console.log('Key up!')">
+    
+    <input type="text" onkeypress="console.log('Key pressed!')">
+
+</body>
+</html>

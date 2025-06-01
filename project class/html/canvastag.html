@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- used using js -->
+     <!-- used to draw graphics on the webpage visa js -->
+    <canvas id="myCanvas">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+
+    <script>
+      let canvas = document.getElementById("myCanvas");
+    //   this is not a tag, but, only a variable
+      let ctx = canvas.getContext("2d");
+    //   predefined function to get the context of the canvas
+    // ctx is the context of the canvas is an object that provides methods and properties for drawing on the canvas.
+
+      ctx.fillStyle="#000000";
+      ctx.fillRect(30,20,80,20);
+    </script>
+
+</body>
+</html>

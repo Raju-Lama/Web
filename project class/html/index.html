@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+</head>
+<body>
+    <div>
+        <h4>fruits</h4>
+
+        <ol>
+            <li>apple</li>
+            <li>banana</li>
+            <li>mango</li>
+            <li>cherry</li>
+        </ol>
+    </div>
+
+    <div>
+        <h3>Unordered list</h3>
+
+        <ul>
+            <li>kathmandu</li>
+            <li>pokhara</li>
+            <li>Lalitpur</li>
+            <li>Jomsom</li>
+        </ul>
+    </div>
+
+    <!-- definition list -->
+    <h3>definition list</h3>
+
+    <dl>
+        <dt>API</dt>
+        <!-- definition term -->
+        <dd>Application programming interface</dd>
+        <!-- definition description -->
+
+        <dt>JSON</dt>
+        <dd>JavaScript Object Notation</dd>
+    </dl>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+    </dl>
+
+    <!-- table  -->
+
+    <div>
+        <h3>Table</h3>
+        <table border="1" cellpadding="3" cellspacing="2" width="30%" align="left">
+            <caption>Employee Data</caption>
+    
+            <tr bgcolor="#e0e0e0" align="center">
+                <th scope="col">Name</th>
+                <th scope="col">Position</th>
+                <th scope="col">Department</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>Software Engineer</td>
+                <td>Development</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>Project Manager</td>
+                <td>Management</td>
+            </tr>
+    
+            <!-- rowspan and colspan to merge cells -->
+    
+            <tr> 
+                <td rowspan="2" valign="top">Alice</td>
+                <td>Manager</td>
+                <td>HR</td>
+            </tr>
+    
+            <tr>
+                <td colspan="2" align="center">On Leave</td>
+            </tr>
+
+        </table>
+    </div>        
+
+
+    <!-- frame that is deprecated -->
+     <!-- 
+        <frameset cols="50%, 50%">
+            <frame src="left.html"></frame>
+            <frame src="right.html"></frame>
+        </frameset>
+
+        <frameset rows="50%, 50%">
+            <frame src="top.html"></frame>
+            <frame src="bottom.html"></frame>
+        </frameset>
+     -->
+    <!-- does not run in html5 -->
+    
+    <br>
+    <br>
+
+    <div>
+        <h2>iframe</h2>
+        <iframe src="https://www.example.com" width="600" height="400" title="Example Iframe"></iframe>
+    </div>
+
+    <!-- form tag -->
+     <div>
+        <br>
+        <br>
+     </div>
+
+    <form method="post">
+        Text box with name, value, and size attributes:<br>
+        <input type="text" name="Address" value="" size=10>
+
+        <br>Text box with password and maxlenght:<br>
+        <input type="password" name="Password" maxlength=10>
+
+        <br>Radio button with default checked<br>
+        <br><br>
+
+        who is your best friend?<br>
+        <input type="radio" name="best friend" value="Ram">
+        Ram<br>
+
+        <input type="radio" name="best friend"  value="Shyam" checked>
+        <!-- with checked, it will be the default choice when first started -->
+        Shyam<br>
+
+        <input type="radio" name="best friend" value="Hari">
+        Hari<br>
+
+        <br>Checkbox<br>
+        <input type="checkbox" name="subscribe" value="yes">
+        Ram<br>
+
+        <input type="checkbox" name="subscribe" value="no" checked>
+        Shyam<br>
+        <!-- with checked it will be default -->
+
+        <input type="checkbox" name="subscribe" value="maybe">
+        Hari<br>
+
+        <br>
+        <br>
+        <br>
+
+        <br>Drop Down list<br>
+
+        <select name="Best friend" size=4>
+            <!-- size for  -->
+            <option value="Ram">Ram</option>
+            <option value="Shyam" selected>Shyam</option>
+            <option value="Hari">Hari</option>
+            <option value="Sita">Sita</option>
+            <option value="Gita">Gita</option>
+        </select>
+
+        <br><br>
+
+
+
+
+    </form>
+
+</body>
+</html>
