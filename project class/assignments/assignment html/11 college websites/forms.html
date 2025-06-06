@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 20px;
+            padding: 20px;
+            font-size: 20px;;
+        }
+    </style>
+</head>
+<body>
+    <a href="home.html"> Home |</a>
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+
+        <div style="flex: 1; text-align: left;">
+            <!-- <h1>University of Hogwarts</h1> -->
+        </div>
+
+        <!-- Left aligned title -->
+        <div style="flex: 1; text-align: left;">
+            <h1>University of Hogwarts</h1>
+        </div>
+
+        <!-- Centered logo -->
+        <div style="flex: 0; text-align: center;">
+            <img src="../../sources/img/hogwarts.png" alt="College Logo" width="150" height="150">
+        </div>
+
+        <!-- Right aligned slogan -->
+        <div style="flex: 1; text-align: right;">
+            <h1 style="color: brown;">Moving towards Excellence!</h1>
+        </div>
+
+        <div style="flex: 1; text-align: right;">
+            <!-- <h1>University of Hogwarts</h1> -->
+        </div>
+    </div>
+
+    <h1>Application Form</h1>
+    <form action="submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        Age: <input type="number" name="age" min="18" max="100" required><br><br>
+
+        Sex: <input type="radio" name="sex" required value="male"> Male
+        <input type="radio" name="sex" required value="female"> Female
+        <input type="radio" name="sex" required value="others"> Others
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" pattern="[0-9]{10}" required><br><br>
+
+        <label for="address">Address:</label>
+        <textarea name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="course">Course:</label>
+        <select name="course" required>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="phd">PhD Program</option>
+        </select><br><br>
+
+        <label>Faculty:</label>
+        <label>
+            <select name="faculty" required>
+                <option value="arts">Humanities and Social Sciences</option>
+                <option value="science">Science and Technology</option>
+                <option value="commerce">Business and Management</option>
+            </select>
+        </label>
+
+        <br><br>
+        <button type="submit">Submit Application</button>
+    
+        <br><br>
+        <button type="reset">Reset Form</button>
+
+    </form>
+</body>
+</html>
