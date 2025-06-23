@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- displays a message with ok and cancel buttons -->
+     <!-- return true if ok else false -->
+    <h2>confirm box example</h2>
+    <button onclick="showConfirm()">Show Confirm</button>
+    <script>
+        function showConfirm(){
+            let result = confirm("Do you want to continue?");
+
+            if(result){
+                alert("You clicked OK!");
+            }
+            else{
+                alert("You clicked Cancel!");
+            }
+        }
+    </script>
+    <button onclick="<script>confirm("yes or no"); </script></button>">confirm?</button>
+</body>
+</html>

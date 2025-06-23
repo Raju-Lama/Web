@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <!-- always keep script at the end if inside the body -->
+    <script>
+        var a = 10;
+        var b = 20;
+        var a = 200;
+        var b = 100;
+        //redeclaration is possible;
+
+        document.getElementById("demo").innerHTML = b + a;
+    </script>
+</body>
+</html>

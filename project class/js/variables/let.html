@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">
+
+        <script>
+            let y=2;//allowed
+            {
+                let y=3;//allowed
+            }
+            {
+                let y=4;//allowed
+                {
+                    let y=4; //allowed
+                }
+            }
+
+            document.getElementById("demo").innerHTML = y;
+            // prints global y that is y=2;
+        </script>
+    </p>
+</body>
+</html>

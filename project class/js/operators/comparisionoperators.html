@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> 
+        var a=5, b=10, c="5", x=a;
+    </p>
+    <p id="p1">a == c returns </p>
+    <p id="p1">a === c returns </p>
+    <p id="p1">a == x returns </p>
+    <p id="p1">a != c returns </p>
+    <p id="p1">a > c returns </p>
+    <p id="p1">a < c returns </p>
+
+    <script>
+        var a=5, b=10, c="5", x=a;
+
+        document.getElementById("p1").innerHTML += a == c;
+        // a==c is compared 
+        document.getElementById("p2").innerHTML += a == c;
+        document.getElementById("p3").innerHTML += a === c;
+        // also checks data type
+        document.getElementById("p4").innerHTML += a == x;
+        document.getElementById("p5").innerHTML += a != c;
+        document.getElementById("p6").innerHTML += a > c;
+        document.getElementById("p6").innerHTML += a < c;
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            /* border-collapse, collapse and separate */
+
+            border-spacing: 10px;
+            /* works only on border-collapse: separate */
+
+            table-layout: fixed;
+            /* auto and fixed */
+            width: 100%;
+
+            caption-side: bottom;
+            /* position of caption to put */
+            /* it is by default top */
+        }
+
+        th, td{
+            height: 50px;
+            text-align:center;
+            vertical-align: middle;
+        }
+
+        td{
+            padding: 10p;
+            /* space inside its cells */
+        }
+
+        tr:hover{
+            background-color: #d1e7dd;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>table</caption>
+        <tr>
+            <th>name</th>
+            <th>address</th>
+        </tr>
+        <tr>
+            <td>ram</td>
+            <td>patan</td>
+        </tr>
+    </table>
+</body>
+</html>

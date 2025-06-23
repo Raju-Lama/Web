@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- displays a message with a text input box. -->
+     <!-- ?accepts user input adn returns it -->
+      <h2>Prompt Box Example</h2>
+      <button onclick="showPrompt()">Click</button>
+
+      <script>
+        function showPrompt(){
+            let name = prompt("Please enter your name: ", "Guest");
+            // default becomes Guest in input field
+
+            if(name!=null && name != ""){
+                alert("hello, " + name + "!");
+            }
+            else{
+                alert("You didn't enter a name.");
+            }
+        }
+      </script>
+</body>
+</html>

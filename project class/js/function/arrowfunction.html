@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- arrow function -->
+     <!-- shorter way to write functions. -->
+      <!-- introduced in ES6 -->
+     <script>
+        let greet = (name) => {
+            document.write("Hello, " + name);
+        };
+        greet("ramesh");
+
+        // for only one statement
+
+        let sayhello = name => document.write("hellow, ", + name);
+
+        document.write(sayhello("ram"));
+        
+        // returning value
+        let add = (a, b) => a + b;
+
+        document.write(add(2, 3));
+     </script>
+</body>
+</html>
