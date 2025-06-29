@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Demo: Error handling</h2>
+
+    <p id="errorMessage"></p>
+    <p id="error"></p>
+
+    <script>
+        try{
+            var result = sum(10,20);//sum is not defined
+        }
+        catch(ex){
+            document.getElementById("errorMessage").innerHTML = ex;
+        }
+
+        try{
+            let zerodivision= 5/0;
+        }
+        catch(e){
+            document.getElementById("error").innerHTML = e;
+        }
+    </script>
+</body>
+</html>

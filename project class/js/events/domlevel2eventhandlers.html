@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        window.addEventListener('load', function(){
+            function handler(){
+                document.getElementById('console').innerHTML = 'Who\'s clicked: ' + this.id;
+                // id is a property of the element that is clicked
+                // that is a selector
+            }
+
+            document.getElementById('btn1').addEventListener('click', handler, false);
+            document.getElementById('btn2').addEventListener('click', handler, false);
+        }, false);
+    </script>
+</head>
+<body>
+    <!-- provide two main methods for dealing with the registering / deregistering event listeners
+     
+    addEventListener()
+    removeEventListener()-->
+
+    <button id="btn1">Button 1 </button><br>
+    <button id="btn2">Button 2 </button><br>
+
+    <div id="console">
+        <!-- this is where the output will be displayed -->
+        Click a button to see the result here.
+    </div>
+
+</body>
+</html>

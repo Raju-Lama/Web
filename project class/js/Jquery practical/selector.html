@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>jQuery Selectors example</h1>
+    <!-- selecting elements by tag name -->
+
+    <p>This is the first paragraph</p>
+    <p>This is the second paragraph</p>
+
+    <script>
+        $("p").css("color", "yellow");
+    </script>
+
+    <!-- ?selecting elements by class name -->
+
+    <p class="myClass"> this paragraph has the class "myClass". </p>
+
+    <script>
+        $(".myClass").css("font-weight", "bold");
+    </script>
+
+
+<!-- selecting elements by ID -->
+    <p id="myID">This paragraph has teh ID "myID".</p>
+
+    <script>
+        $("#myID").css("text-decoration", "underline");
+    </script>
+
+    <!-- selecting elements by attribute     -->
+
+    <a href="https://www.example.com">Click here</a> to go to the example website.
+
+    <script>
+        $("a[href='https://www.example.com']").css("color", "red");
+    </script>
+
+
+</body>
+</html>
