@@ -1,0 +1,79 @@
+<!-- Make a web page making using normal flow box layout -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #head{
+            background-color: grey;
+            color: white;
+            padding: 20px;
+        }
+
+        #foot{
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #aboutus{
+            border: 0.4px solid grey;
+            border-radius: 2px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-start; /* Or space-between, space-around, etc. */
+            gap: 10px;
+            background-color: lightgrey;
+        }
+        
+        nav a {
+            border: 0.4px solid grey;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="head">
+            <h1>Normal Flow Box Layout Example</h1>
+        </div>
+
+        <div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+
+        <div id="aboutus">
+            <h2>About Us</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatem quia a dolorem ut vel ab sed accusamus qui exercitationem, voluptas assumenda, at earum culpa dignissimos eligendi vitae in minima quibusdam facilis repellendus tempore vero harum. A possimus quas optio omnis, aliquam eius beatae fugiat iste deleniti earum, dignissimos explicabo.</p>
+        </div>
+
+        <div id="foot">
+            &copy; 2023 Normal Flow Box Layout Example
+        </div>
+    </div>
+</body>
+</html>

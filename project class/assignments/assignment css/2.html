@@ -1,0 +1,30 @@
+<!-- Make a webpage using inline, internal, external css -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline, internal, external css</title>
+    <style>
+        /* internal css */
+        #p1{
+            color: green;
+            font-weight: bold;
+        }
+
+        #p3{
+            background-color: yellow;
+        }
+
+    </style>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <h1 style="color: blue;">Welcome to my website</h1>
+    <p id="p1">This is the intro paragraph of the page. It is <span style="background-color: yellow;">highlighted</span> for emphasis.</p>
+
+    <p>This is a regular paragraph of text. It is written in the default font, but, has a <span style="color: red;">red</span> word in it.</p>
+
+    <p id="p3">This paragraph has a yellow background because of the "highlight" class.</p>
+</body>
+</html>

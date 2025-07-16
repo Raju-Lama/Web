@@ -1,0 +1,64 @@
+<!-- Make a web page using web page that uses CSS Media Queries to make it responsive to different screen size.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body {
+        background-color: whitesmoke;
+        }
+
+        /* On screens that are 992px or less, set the background color to blue */
+        @media screen and (max-width: 992px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+        /* On screens that are 600px or less, set the background color to olive */
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: olive;
+            }
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #head{
+            background-color: lightgrey;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #foot{
+            background-color: lightgrey;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #content{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <h1>Responsize Web Page Example</h1>
+    </div>
+
+    <div id="content">
+        Use the box-sizing property to include padding and border in the element's total width and height.
+    </div>
+
+    <div id="foot">
+        &copy; 2021 - Example Footer
+    </div>
+</body>
+</html>

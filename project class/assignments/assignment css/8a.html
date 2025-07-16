@@ -1,0 +1,62 @@
+<!-- 8. Make a Web page using Basic Box Layout, Display Property, Padding, margin -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #grid{
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #box{
+            border: 1px solid black;
+            padding: 50px 30px 50px 30px;
+            /* padding top right bottom left, clock wise */
+            margin: 10px;
+        }
+
+        .bluebox {
+            background-color: lightblue;
+        }
+
+        .greenbox {
+            background-color: lightgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div id="box" class="bluebox">
+            Box 1
+        </div>
+        <div id="box" class="greenbox">
+            Box 1
+        </div>
+        <div id="box" class="bluebox">
+            Box 1
+        </div>
+        <div id="box" class="greenbox">
+            Box 1
+        </div>
+        <div id="box" class="bluebox">
+            Box 1
+        </div>
+        <div id="box" class="greenbox">
+            Box 1
+        </div>
+    </div>
+</body>
+</html>

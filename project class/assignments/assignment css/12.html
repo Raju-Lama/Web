@@ -1,0 +1,48 @@
+<!-- 12. Make a web page using responsive images in css. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 0;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .responsive{
+            width: 100%;
+            height: auto;
+            max-width: 300px; /* Adjust as needed */
+            margin: 0 auto; /* Center the image */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="img/chihuahua.JPG" alt="Chihuahua" class="responsive">
+        <img src="img/owl.png" alt="Owl" class="responsive">
+        <img src="img/chihuahua.JPG" alt="Chihuahua" class="responsive">
+        <img src="img/owl.png" alt="Owl" class="responsive">
+        <img src="img/chihuahua.JPG" alt="Chihuahua" class="responsive">
+        <img src="img/owl.png" alt="Owl" class="responsive">
+        <img src="img/chihuahua.JPG" alt="Chihuahua" class="responsive">
+        <img src="img/owl.png" alt="Owl" class="responsive">
+        <img src="img/chihuahua.JPG" alt="Chihuahua" class="responsive">
+        <img src="img/owl.png" alt="Owl" class="responsive">
+        <img src="img/chihuahua.JPG" alt="Chihuahua" class="responsive">
+        <img src="img/owl.png" alt="Owl" class="responsive">
+    </div>
+</body>
+</html>

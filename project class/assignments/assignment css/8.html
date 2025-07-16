@@ -1,0 +1,77 @@
+<!-- Make a web page using Basic box layout -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #grid{
+            padding: 10px;
+            margin: 10px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+        }
+        
+        #box{
+            border: 0.4px solid grey;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            margin: 10px;
+            background-color: lightgrey;
+        }
+
+        #foot{
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+
+    <div>
+        <div id="grid">
+            <div id="box">
+                <h2>Box 1</h2><br>
+                <p>This CSS box model describes the rectangular boxes that are generated for elements in the document tree andn laid out according to the visual formatting model.</p>
+            </div>
+            <div id="box">
+                <h2>Box 2</h2><br>
+                <p>This CSS box model describes the rectangular boxes that are generated for elements in the document tree andn laid out according to the visual formatting model.</p>
+            </div>
+            <div id="box">
+                <h2>Box 3</h2><br>
+                <p>This CSS box model describes the rectangular boxes that are generated for elements in the document tree andn laid out according to the visual formatting model.</p>
+            </div>
+            <div id="box">
+                <h2>Box 4</h2><br>
+                <p>This CSS box model describes the rectangular boxes that are generated for elements in the document tree andn laid out according to the visual formatting model.</p>
+            </div>
+            <div id="box">
+                <h2>Box 5</h2><br>
+                <p>This CSS box model describes the rectangular boxes that are generated for elements in the document tree andn laid out according to the visual formatting model.</p>
+            </div>
+            <div id="box">
+                <h2>Box 6</h2><br>
+                <p>This CSS box model describes the rectangular boxes that are generated for elements in the document tree andn laid out according to the visual formatting model.</p>
+            </div>
+
+        </div>
+
+        <div id="foot">
+            &copy; 2022 Basic Box Layout Example
+        </div>
+    </div>
+</body>
+</html>

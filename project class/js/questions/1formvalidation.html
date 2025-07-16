@@ -1,0 +1,110 @@
+<!-- create a HTML form with fields like username, password, email, 
+ country. the username should be textbox, password and email should be the password
+ and email fields. the country should be drop down. now write javascript
+ function for form validation. your function should validate
+ the username to be of length 5, password should start with digit and should be alphanumeric . 
+ the email should be valid. the country field should be selected.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function formValidation(){
+            var username = document.forms.RegForm.Name.value;
+            var password = document.forms.RegForm.Password.value;
+            var email = document.forms.RegForm.Email.value;
+            var what = document.forms.RegForm.Country.value;
+
+            var regPassword = /^[a-z0-9]+$/i;
+            var regEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if(username == ""){
+                alert("Please enter your name.");
+                username.focus();
+                return false;
+            }
+
+            if(username.length < 5){
+                window.alert("Please enter your name properly.");
+                username.focus();
+                return false;
+            }
+
+            if(password == "" || !regPassword.text(password)){
+                alert("Please enter a valid password.");
+                password.focus();
+                return false;
+            }
+
+            if(email == "" || !regEmail.test(email)){
+                alert("Please enter a valid email address.");
+                email.focus();
+                return false;
+            }
+
+            if(what.selectedIndex == -1){
+                alert("Please enter your country.");
+                what.focus();
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+    <style>
+        div{
+            box-sizing: border-box;
+            width: 100%;
+            border: 100px solid black;
+            float: left;
+            align-content: center;
+        }
+
+        form{
+            margin: 0 auto;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: red">HTML FORM</h1>
+
+    <form action="#" method="post" name="myform" onsubmit = "return formValidation();">
+        <p>
+            Name: 
+            <input type="text" name="username" size="65">
+        </p><br/>
+
+        <p>
+            Password:
+            <input type="password" name="password" size="65">
+        </p><br/>
+
+        <p>
+            E-mail Address:
+            <input type="email" name="email" size="65">
+        </p><br/>
+
+        <p>
+            SELECT YOUR COUNTRY
+            <select type="text" value="" name="Country">
+                <option>NEPAL</option>
+                <option>Germany</option>
+                <option>France</option>
+                <option>india</option>
+                <option>china</option>
+                <option>usa</option>
+            </select>
+        </p><br/>
+
+        <p>
+            <input type="submit" value="send" name="Submit"/>
+            <input type="reset" value="Reset" name="Reset"/>
+        </p>
+    </form>
+</body>
+</html>

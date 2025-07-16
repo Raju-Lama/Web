@@ -1,0 +1,99 @@
+<!-- 13. Basic HTML and CSS template that we can use to structure your sliced images and create a webpage -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #head{
+            background-color: grey;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo{
+            justify-content: flex-start;
+        }
+
+        #nav2{
+            justify-content: flex-end;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+
+        #foot{
+            text-align: center;
+            background-color: grey;
+            padding: 20px;
+            color: white;
+        }
+
+        .section{
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .responsive{
+            width: 40%;
+            height: auto;
+            max-width: 300px;;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="logo">
+            <img src="#" alt="logo">
+        </div>
+
+        <div id="nav2">
+            <nav> 
+            <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Section Heading</h2>
+        <p>Use the box-sizing property to include padding and borders in the element's total width and height.</p>
+        
+        <div class="image">
+            <img src="img/chihuahua.JPG" alt="Chihuahua" class="responsive">
+            <img src="img/owl.png" alt="Owl" class="responsive">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Section Heading</h2>
+        <p>Use the box-sizing property to include padding and borders in the element's total width and height.</p>
+        
+        <div class="image">
+            <img src="img/chihuahua.JPG" alt="Chihuahua" class="responsive">
+            <img src="img/owl.png" alt="Owl" class="responsive">
+        </div>
+    </div>
+
+    <div id="foot">
+        &copy; 2023 My Sliced Webpage
+    </div>
+
+</body>
+</html>
