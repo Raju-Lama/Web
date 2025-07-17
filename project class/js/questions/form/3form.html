@@ -1,0 +1,34 @@
+<!-- Write HTML script for creating a form containing text box for username, password field 
+ for password, and checkbox for education fields. 
+ write a javascript function for the validation of the form for all
+ of the fields as required. in addition length of username
+ should at least 4, the password should start with digit and end with $ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="validate.js">
+    </script>
+ </head>
+ <body>
+    <div class="form">
+        <h2>Enter Details</h2>
+        <form action="" onsubmit="return validate();">
+            Username:
+            <input id="uname" type="text" name="username" required><br/><br/>
+            Password:
+            <input id="upass" type="password" name="password" required><br/><br/>
+
+            Educational Field:
+            <input type="checkbox" name="field[]" value="bit">BIT
+            <input type="checkbox" name="field[]" value="csit">BscCSIT
+            <input type="checkbox" name="field[]" value="bca">BCA
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+ </body>
+ </html>
