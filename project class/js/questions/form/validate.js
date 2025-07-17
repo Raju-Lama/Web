@@ -31,7 +31,14 @@ function validate() {
     var education = document.getElementById('field[]');
 
     for(var i=0; i<education.length; ++i) {
+        if(education[i].checked){
+            continue;
+        }
 
+        alert("Please Select Your educational field.")
+        return false;
     }
+
+    return true;
 
 }
